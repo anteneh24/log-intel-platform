@@ -1,0 +1,66 @@
+server:
+  port: 8051
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      properties:
+        max.block.ms: 1500
+  application:
+    name: service-api
+  threads:
+    virtual:
+      enabled: true # Enable Java 21 Virtual Threads
+  jpa:
+    open-in-view: false # Critical for performance
+    hibernate:
+      ddl-auto: validate # Never let app change prod schema
+    properties:
+      hibernate.jdbc.batch_size: 50
+  datasource:
+    url: jdbc:postgresql://localhost:5432/logintel
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 20
+      leak-detection-threshold: 30000
+      connection-timeout: 5000
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      lettuce:
+        pool:
+          max-active: 16
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true  # <--- ADD THIS LINE
+    baseline-version: 0
+    clean-disabled: true
+    clean-on-validation-error: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,metrics
+  endpoint:
+    health:
+      show-details: always
+
+com:
+  platform:
+    kafka:
+      auto-create-topics: true
+    ingestion:
+      kafka:
+        dual-write: true
+      default-tenant-id: default
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

@@ -1,0 +1,4 @@
+com\platform\persistence\entity\TicketEntity.class
+com\platform\persistence\entity\IncidentEntity.class
+com\platform\persistence\repo\IncidentRepository.class
+com\platform\persistence\repo\TicketRepository.class

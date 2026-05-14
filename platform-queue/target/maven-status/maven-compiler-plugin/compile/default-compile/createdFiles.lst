@@ -1,0 +1,7 @@
+com\platform\queue\config\QueueKafkaAutoConfiguration.class
+com\platform\queue\config\KafkaErrorConfig.class
+com\platform\queue\model\KafkaEnvelope.class
+com\platform\queue\config\KafkaEnvelopeProducerAutoConfiguration.class
+com\platform\queue\validation\JsonSchemaValidator.class
+com\platform\queue\producer\EnvelopeProducer.class
+com\platform\queue\config\KafkaTopicsConfig.class

@@ -1,0 +1,15 @@
+name: Build and Validate
+on: [pull_request]
+
+job:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - name: Set up JDK 21
+        uses: action/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Build with maven
+        run: mvn clean verify

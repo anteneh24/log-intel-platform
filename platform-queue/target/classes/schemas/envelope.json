@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.local/schemas/kafka-envelope.json",
+  "title": "KafkaEnvelope",
+  "description": "Wrapper for outbound Kafka messages serialized as JSON.",
+  "type": "object",
+  "required": [
+    "schema",
+    "messageId",
+    "occurredAt",
+    "producedAt",
+    "traceId",
+    "tenantId",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "description": "Schema identifier / version tag for the payload."
+    },
+    "messageId": {
+      "type": "string",
+      "description": "Unique id for this message (UUID)."
+    },
+    "occurredAt": {
+      "type": "string",
+      "description": "When the originating event occurred (ISO-8601)."
+    },
+    "producedAt": {
+      "type": "string",
+      "description": "When the envelope was produced (ISO-8601)."
+    },
+    "traceId": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "payload": {
+      "description": "Event-specific payload; structure depends on schema."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+com\platform\core\model\Ticket.class
+com\platform\core\util\Fingerprinter.class
+com\platform\core\agent\AgentContext.class
+com\platform\core\model\AgentStep$Status.class
+com\platform\core\model\LogEvent.class
+com\platform\core\model\Incident$Status.class
+com\platform\core\model\AgentStep.class
+com\platform\core\model\LogIngestionRequest.class
+com\platform\core\model\Ticket$Status.class
+com\platform\core\model\Incident.class
+com\platform\core\model\LogIngestionRequest$LogEntry.class
+com\platform\core\util\LogNormalizer.class
+com\platform\core\agent\Agent.class

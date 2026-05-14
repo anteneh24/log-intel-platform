@@ -1,0 +1,6 @@
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\ApiApplication.java
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\config\KafkaAdminConfiguration.java
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\config\PlatformConfig.java
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\controller\LogIngestionController.java
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\exception\IngestionQueueException.java
+C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api\service\IngestionService.java

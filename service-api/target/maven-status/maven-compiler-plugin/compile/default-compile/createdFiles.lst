@@ -1,0 +1,6 @@
+com\platform\api\service\IngestionService.class
+com\platform\api\exception\IngestionQueueException.class
+com\platform\api\ApiApplication.class
+com\platform\api\config\KafkaAdminConfiguration.class
+com\platform\api\controller\LogIngestionController.class
+com\platform\api\config\PlatformConfig.class
