@@ -1,0 +1,2 @@
+# Spring Boot default console layout (Logback)
+JAVA_LOG %{TIMESTAMP_ISO8601:timestamp}%{SPACE}%{LOGLEVEL:level}%{SPACE}%{NUMBER:pid}%{SPACE}---%{SPACE}\[%{DATA:application}\]%{SPACE}\[%{DATA:thread}\]%{SPACE}%{NOTSPACE:logger}%{SPACE}:%{SPACE}%{GREEDYDATA:message}
