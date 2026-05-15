@@ -6,6 +6,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.time.Instant;
 import java.util.UUID;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 @Entity
 @Table(name = "tickets")
@@ -30,7 +32,8 @@ public class TicketEntity {
   @Column(name = "service", nullable = false)
   private String service;
 
-  @Column(name = "suspected_files", nullable = false)
+  @JdbcTypeCode(SqlTypes.JSON)
+  @Column(name = "suspected_files", nullable = false, columnDefinition = "jsonb")
   private String suspectedFilesJson;
 
   @Column(name = "fix_suggestion")

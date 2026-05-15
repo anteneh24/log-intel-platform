@@ -1,3 +1,4 @@
+com\platform\core\model\ParsedLog.class
 com\platform\core\model\Ticket.class
 com\platform\core\util\Fingerprinter.class
 com\platform\core\agent\AgentContext.class
@@ -10,4 +11,5 @@ com\platform\core\model\Ticket$Status.class
 com\platform\core\model\Incident.class
 com\platform\core\model\LogIngestionRequest$LogEntry.class
 com\platform\core\util\LogNormalizer.class
+com\platform\core\util\LogParser.class
 com\platform\core\agent\Agent.class

@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb8d4cd-3412-4c26-8186-a68a5fac67d5" name="Changes" comment="" />
+    <list default="true" id="5eb8d4cd-3412-4c26-8186-a68a5fac67d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-core/src/main/java/com/platform/core/model/ParsedLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-core/src/main/java/com/platform/core/util/LogParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-persistence/src/main/java/com/platform/persistence/entity/AgentExecutionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform-persistence/src/main/java/com/platform/persistence/repo/AgentExecutionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/consumer/AnomalyOrchestratorConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/consumer/PreprocessingConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/detector/AnomalyDetectionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/detector/AnomalyDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/detector/AnomalyReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/detector/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/service/AgentExecutionRecorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/service/OrchestratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/service/TicketWriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/stats/BaselineStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/stats/WindowedFingerprintCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/util/StubTicketGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7eb8b81e-2bb7-442c-9edd-c9b2e47c4d9f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7eb8b81e-2bb7-442c-9edd-c9b2e47c4d9f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7eb8b81e-2bb7-442c-9edd-c9b2e47c4d9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7eb8b81e-2bb7-442c-9edd-c9b2e47c4d9f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platform-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/platform-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/platform-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-core/target/platform-core-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/platform-core/target/platform-core-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-persistence/src/main/java/com/platform/persistence/entity/TicketEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-persistence/src/main/java/com/platform/persistence/entity/TicketEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-persistence/target/classes/com/platform/persistence/entity/TicketEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/platform-persistence/target/classes/com/platform/persistence/entity/TicketEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/platform-persistence/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-persistence/target/platform-persistence-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/platform-persistence/target/platform-persistence-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/config/KafkaTopicsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/config/KafkaTopicsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/config/QueueKafkaAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/config/QueueKafkaAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/validation/JsonSchemaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/src/main/java/com/platform/queue/validation/JsonSchemaValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/src/main/resources/schemas/envelope.json" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/src/main/resources/schemas/envelope.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/target/classes/schemas/envelope.json" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/target/classes/schemas/envelope.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform-queue/target/platform-queue-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/platform-queue/target/platform-queue-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/src/main/java/com/platform/api/ApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/java/com/platform/api/ApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api/target/service-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service-api/target/service-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-orchestrator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-orchestrator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-orchestrator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-orchestrator/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,12 +61,31 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;antenehgenerator-droid&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anteneh24/log-intel-platform.git&quot;,
+    &quot;accountId&quot;: &quot;0aa2bced-1065-46e8-9409-77f311d91dde&quot;
+  }
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -32,53 +95,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-jdk-21&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anten/Learning/log-intel-platform/service-orchestrator/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/anten/Learning/log-intel-platform/service-orchestrator/src/main/java/com/platform/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;38ba7c55bc831d89ae5800ab714388f6&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.LogParserTest.parsesSpringBootConsoleLine.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.OrchestratorApplication.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "graalvm-jdk-21",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/anten/Learning/log-intel-platform/service-orchestrator/src/main/java/com/platform/service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/anten/Learning/log-intel-platform/service-orchestrator/src/main/java/com/platform/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "38ba7c55bc831d89ae5800ab714388f6",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\service" />
+      <recent name="C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform" />
       <recent name="C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\resources" />
       <recent name="C:\Users\anten\Learning\log-intel-platform\platform-queue\src\main\resources" />
       <recent name="C:\Users\anten\Learning\log-intel-platform\service-api\src\main\resources" />
-      <recent name="C:\Users\anten\Learning\log-intel-platform\service-api\src\main\java\com\platform\api" />
-      <recent name="C:\Users\anten\Learning\log-intel-platform\platform-core\src\main\java\com\platform\core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anten\Learning\log-intel-platform\infa" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.platform.persistence.repo" />
+      <recent name="com.platform.persistence.entity" />
+      <recent name="com.platform.core.model" />
+      <recent name="com.platform.core.util" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.OrchestratorApplication">
+    <configuration name="LogParserTest.parsesSpringBootConsoleLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="platform-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platform.core.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.platform.core.util" />
+      <option name="MAIN_CLASS_NAME" value="com.platform.core.util.LogParserTest" />
+      <option name="METHOD_NAME" value="parsesSpringBootConsoleLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2">
@@ -92,6 +188,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrchestratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-orchestrator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.platform.OrchestratorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.platform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrchestratorApplication" />
+        <item itemvalue="JUnit.LogParserTest.parsesSpringBootConsoleLine" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -120,11 +235,37 @@
       <workItem from="1778580078022" duration="3536000" />
       <workItem from="1778584113808" duration="10144000" />
       <workItem from="1778728723720" duration="59000" />
-      <workItem from="1778728802675" duration="3355000" />
+      <workItem from="1778728802675" duration="3777000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-core/src/test/java/com/platform/core/util/LogParserTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/platform-core/src/test/java/com/platform/core/util/LogParserTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/consumer/PreprocessingConsumer.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-orchestrator/src/main/java/com/platform/service/OrchestratorService.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
