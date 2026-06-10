@@ -18,6 +18,10 @@ public final class AgentContext {
     return new AgentContext(UUID.randomUUID());
   }
 
+    public static AgentContext withPipelineId(UUID pipelineId) {
+        return new AgentContext(pipelineId);
+    }
+
   public UUID getPipelineId() {
     return pipelineId;
   }

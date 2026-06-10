@@ -1,0 +1,33 @@
+server:
+  port: 8070
+
+spring:
+  application:
+    name: service-embed-indexer
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      acks: all
+      properties:
+        enable.idempotence: true
+
+com:
+  platform:
+    kafka:
+      auto-create-topics: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+com.platform.embed.index:
+  send-timeout-ms: 5000
+  cli.enabled: false

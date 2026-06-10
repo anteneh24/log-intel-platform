@@ -7,11 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="platform-core" />
-        <module name="platform-persistence" />
         <module name="platform-queue" />
         <module name="service-orchestrator" />
+        <module name="service-embedding-worker" />
+        <module name="platform-persistence" />
+        <module name="platform-rag" />
+        <module name="service-embed-indexer" />
         <module name="servlet-api" />
         <module name="service-api" />
+        <module name="agents" />
       </profile>
     </annotationProcessing>
   </component>

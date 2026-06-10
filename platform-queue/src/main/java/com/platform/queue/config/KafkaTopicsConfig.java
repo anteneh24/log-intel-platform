@@ -30,6 +30,7 @@ public class KafkaTopicsConfig {
   public static final String TICKETS_EVENTS = "tickets.events";
   public static final String TICKETS_NEW = "tickets.new";
   public static final String EMBEDDING_JOBS = "embedding.jobs";
+  public static final String EMBED_REQUESTS = "embed.requests";
   public static final String RAG_QUERIES = "rag.queries";
 
   /** All platform topic names (for observability / admin tooling). */
@@ -43,6 +44,7 @@ public class KafkaTopicsConfig {
         TICKETS_EVENTS,
         TICKETS_NEW,
         EMBEDDING_JOBS,
+        EMBED_REQUESTS,
         RAG_QUERIES);
   }
 
@@ -84,6 +86,11 @@ public class KafkaTopicsConfig {
   @Bean
   public NewTopic embeddingJobs() {
     return TopicBuilder.name(EMBEDDING_JOBS).partitions(3).replicas(1).build();
+  }
+
+  @Bean
+  public NewTopic embedRequests() {
+    return TopicBuilder.name(EMBED_REQUESTS).partitions(3).replicas(1).build();
   }
 
   @Bean

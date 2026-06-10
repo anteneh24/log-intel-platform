@@ -17,6 +17,15 @@ services:
     ports:
       - "6379:6379"
 
+  redis-insight:
+    image: redis/redisinsight:latest
+    depends_on:
+      - redis
+    ports:
+      - "5540:5540"
+    volumes:
+      - redisinsight:/data
+
   kafka:
     image: confluentinc/cp-kafka:7.5.0
     hostname: kafka
@@ -27,19 +36,24 @@ services:
       CLUSTER_ID: mkIqH636T1aR2H8L54r48A
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      # PLAINTEXT_HOST: apps on the host (embed-indexer, service-api). PLAINTEXT: Docker network (kafka-ui).
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:29092,PLAINTEXT_HOST://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
       KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   kafka-ui:
     image: provectuslabs/kafka-ui:latest
+    depends_on:
+      - kafka
     ports:
       - "8080:8080"
     environment:
       KAFKA_CLUSTERS_0_NAME: local
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
 
   prometheus:
     image: prom/prometheus:latest
@@ -63,3 +77,4 @@ services:
 
 volumes:
   pgdata:
+  redisinsight:

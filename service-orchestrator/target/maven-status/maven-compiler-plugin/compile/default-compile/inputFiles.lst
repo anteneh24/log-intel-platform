@@ -1,10 +1,16 @@
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\agent\AnomalyDetectionAgent.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\consumer\AnomalyOrchestratorConsumer.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\consumer\PreprocessingConsumer.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\detector\AnomalyDetectionContext.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\detector\AnomalyDetector.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\detector\AnomalyReport.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\OrchestratorApplication.java
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\pipeline\ActiveIncidentRegistry.java
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\pipeline\PipelineDedupLock.java
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\service\AgentExecutionRecorder.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\service\OrchestratorService.java
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\service\TicketWriteService.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\stats\BaselineStore.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\stats\WindowedFingerprintCounter.java
+C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\util\LogPipelineMapper.java
 C:\Users\anten\Learning\log-intel-platform\service-orchestrator\src\main\java\com\platform\util\StubTicketGenerator.java

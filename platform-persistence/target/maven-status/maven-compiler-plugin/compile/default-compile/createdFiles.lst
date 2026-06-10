@@ -2,3 +2,5 @@ com\platform\persistence\entity\TicketEntity.class
 com\platform\persistence\entity\IncidentEntity.class
 com\platform\persistence\repo\IncidentRepository.class
 com\platform\persistence\repo\TicketRepository.class
+com\platform\persistence\entity\AgentExecutionEntity.class
+com\platform\persistence\repo\AgentExecutionRepository.class

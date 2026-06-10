@@ -7,7 +7,7 @@ If you have local services running on these ports, stop them or update the compo
 - 9092 (Kafka): Standard Kafka port.
 
 ## Setup Steps
-1. `cd infra`
+1. `cd infa`
 2. `make up`
 3. Verify Postgres extensions:
    `docker exec -it infra-postgres-1 psql -U user -d logintel -c 'SELECT * FROM pg_extension'`
@@ -22,5 +22,6 @@ If you have local services running on these ports, stop them or update the compo
 
 ## Access
 - Kafka UI: http://localhost:8080
+- Redis Insight: http://localhost:5540 (add database: host `redis`, port `6379`; browse keys `llm:embed:*`)
 - Grafana: http://localhost:3000 (admin/admin)
 - Adminer: http://localhost:8081

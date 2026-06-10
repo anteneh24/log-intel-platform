@@ -16,11 +16,18 @@ import java.util.Map;
 @Component
 public class LogParser {
   private static final String PATTERNS_RESOURCE = "patterns/logs";
+  /** Spring Boot console layout (Logback); overridden if classpath resource {@code patterns/logs} defines JAVA_LOG. */
+  private static final String DEFAULT_JAVA_LOG_PATTERN =
+      "%{TIMESTAMP_ISO8601:timestamp}%{SPACE}%{LOGLEVEL:level}%{SPACE}%{NUMBER:pid}%{SPACE}---%{SPACE}"
+          + "\\[%{DATA:application}\\]%{SPACE}\\[%{DATA:thread}\\]%{SPACE}%{NOTSPACE:logger}%{SPACE}:%{SPACE}"
+          + "%{GREEDYDATA:message}";
+
   private final Grok javaLogGrok;
 
   public LogParser() {
     GrokCompiler compiler = GrokCompiler.newInstance();
     compiler.registerDefaultPatterns();
+    compiler.register("JAVA_LOG", DEFAULT_JAVA_LOG_PATTERN);
     registerCustomPatterns(compiler);
     this.javaLogGrok = compiler.compile("%{JAVA_LOG}");
   }
@@ -41,13 +48,16 @@ public class LogParser {
   }
 
   private static void registerCustomPatterns(GrokCompiler compiler) {
-    ClassLoader cl = LogParser.class.getClassLoader();
-    try (InputStream is = cl.getResourceAsStream(PATTERNS_RESOURCE)) {
-      if (is == null) {
+    InputStream is = openPatternsResource(LogParser.class.getClassLoader());
+    if (is == null) {
+      is = openPatternsResource(Thread.currentThread().getContextClassLoader());
+    }
+    try (InputStream stream = is) {
+      if (stream == null) {
         return;
       }
       try (BufferedReader reader =
-          new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8))) {
+          new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
         String line;
         while ((line = reader.readLine()) != null) {
           String trimmed = line.trim();
@@ -68,6 +78,13 @@ public class LogParser {
     } catch (IOException ignored) {
       // If patterns can't be loaded, parsing will fall back to raw message in parse().
     }
+  }
+
+  private static InputStream openPatternsResource(ClassLoader cl) {
+    if (cl == null) {
+      return null;
+    }
+    return cl.getResourceAsStream(PATTERNS_RESOURCE);
   }
 
   private static int indexOfWhitespace(String s) {

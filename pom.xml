@@ -20,6 +20,10 @@
         <module>platform-persistence</module>
         <module>service-api</module>
         <module>service-orchestrator</module>
+        <module>service-embedding-worker</module>
+        <module>platform-rag</module>
+        <module>service-embed-indexer</module>
+        <module>agents</module>
     </modules>
 
     <dependencyManagement>

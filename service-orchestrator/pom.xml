@@ -25,6 +25,11 @@
         </dependency>
         <dependency>
             <groupId>com.platform</groupId>
+            <artifactId>platform-rag</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.platform</groupId>
             <artifactId>platform-persistence</artifactId>
             <version>${project.version}</version>
         </dependency>
