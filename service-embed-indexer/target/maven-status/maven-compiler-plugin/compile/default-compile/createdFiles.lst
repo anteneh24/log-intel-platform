@@ -1,0 +1,11 @@
+com\platform\indexing\LocalCodeFileScanner$ScannedFile.class
+com\platform\config\EmbedRequestKafkaProducerConfig.class
+com\platform\controller\CodeEmbedController.class
+com\platform\EmbedIndexerApplication.class
+com\platform\indexing\CodeEmbedPublisher.class
+com\platform\model\EmbedRequestMessage.class
+com\platform\indexing\LocalCodeFileScanner.class
+com\platform\indexing\LocalCodeIndexService.class
+com\platform\model\CodeIndexResponse.class
+com\platform\model\CodeIndexRequest.class
+com\platform\util\JavaFqnExtractor.class

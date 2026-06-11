@@ -1,0 +1,5 @@
+com\platform\worker\consumer\BatchConsumer.class
+com\platform\worker\EmbeddingWorkerApplication.class
+com\platform\worker\model\EmbedRequest.class
+com\platform\worker\services\EmbeddingService.class
+com\platform\worker\config\EmbedRequestKafkaConsumerConfig.class

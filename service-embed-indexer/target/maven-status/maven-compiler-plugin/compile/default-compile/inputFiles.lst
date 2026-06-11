@@ -1,0 +1,10 @@
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\config\EmbedRequestKafkaProducerConfig.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\controller\CodeEmbedController.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\EmbedIndexerApplication.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\indexing\CodeEmbedPublisher.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\indexing\LocalCodeFileScanner.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\indexing\LocalCodeIndexService.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\model\CodeIndexRequest.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\model\CodeIndexResponse.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\model\EmbedRequestMessage.java
+C:\Users\anten\Learning\log-intel-platform\service-embed-indexer\src\main\java\com\platform\util\JavaFqnExtractor.java
