@@ -12,6 +12,7 @@ com\platform\agent\AnomalyDetectionAgent.class
 com\platform\detector\AnomalyDetector.class
 com\platform\OrchestratorApplication.class
 com\platform\detector\AnomalyReport.class
+com\platform\util\RagChunkFormatter.class
 com\platform\service\TicketWriteService.class
 com\platform\util\LogPipelineMapper.class
 com\platform\service\OrchestratorService.class

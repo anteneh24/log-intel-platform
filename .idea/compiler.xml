@@ -10,12 +10,12 @@
         <module name="platform-queue" />
         <module name="service-orchestrator" />
         <module name="service-embedding-worker" />
+        <module name="platform-agents" />
         <module name="platform-persistence" />
         <module name="platform-rag" />
         <module name="service-embed-indexer" />
         <module name="servlet-api" />
         <module name="service-api" />
-        <module name="agents" />
       </profile>
     </annotationProcessing>
   </component>

@@ -10,6 +10,7 @@ import com.platform.core.model.Ticket;
 import com.platform.detector.AnomalyDetectionContext;
 import com.platform.detector.AnomalyDetector;
 import com.platform.model.RetrievedChunk;
+import com.platform.orchestrator.IncidentPipelineInput;
 import com.platform.pipeline.ActiveIncidentRegistry;
 import com.platform.pipeline.PipelineDedupLock;
 import com.platform.service.AgentExecutionRecorder;
@@ -137,11 +138,13 @@ public class OrchestratorService {
 
             IncidentPipelineInput agentInput =
                 new IncidentPipelineInput(
-                    LogPipelineMapper.requirementFor(parsedLog),
+                    LogPipelineMapper.requirementFor(log),
                     stackTrace,
                     ragContext,
                     true,
-                    parsedLog.raw().service());
+                    log.raw().service());
+            AgentContext pipelineCtx = AgentContext.withPipelineId(pipelineId);
+            long agentStart = System.currentTimeMillis();
 
             Instant ts = log.raw().occurredAt() == null ? startedAt : log.raw().occurredAt();
             String service = log.raw().service();

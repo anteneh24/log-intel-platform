@@ -30,6 +30,11 @@
         </dependency>
         <dependency>
             <groupId>com.platform</groupId>
+            <artifactId>platform-agents</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.platform</groupId>
             <artifactId>platform-persistence</artifactId>
             <version>${project.version}</version>
         </dependency>
